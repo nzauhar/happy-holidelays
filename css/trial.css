@@ -3,6 +3,10 @@ body {
   /* text-align: center; */
 }
 
+.misfortune h2{
+  margin-top: 1%;
+}
+
 .grid-container2 {
     align-content:center;
     align-items: baseline;
@@ -39,9 +43,9 @@ body {
 }
 
 #button {
-  font-size: 24px;
+  font-size: 1.1em;
   border-radius: 5px;
-  width: 120px;
+  width: 200px;
   height: 60px;
   color: white;
   background: #09A64D;
@@ -49,6 +53,8 @@ body {
   display: inline-block;
   margin: 15px;
   z-index: 3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 #button:hover, #button:focus {
