@@ -12,7 +12,7 @@ h1{
 
 h2{
     font-family: 'Elsie', cursive;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
 }
 
@@ -104,15 +104,32 @@ nav a:focus {
 
 /* background image on homepage   */
 body.home{
-    height: 80vh;
-    width: 100vw;
-    background: url(../images/xmas-home-1.jpg) no-repeat center center fixed;
+    /* height: 80vh;
+    width: 100vw; */
+    /* background: url(../images/xmas-home-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-image: url(../images/xmas-home-1.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height:100%;
+    width:100%; 
     background-color: #7AC6F4;
+    z-index: 1;
+    
 } 
+
 
 .fun-container {
     display: flex;
@@ -149,6 +166,22 @@ body.home{
  
  .flight{
     background-color: #7AC6F4;
+}
+
+.flight nav, h1, p{
+    margin-left: 5%;
+}
+
+.misfortune nav, h1, p{
+    margin-left: 5%;
+}
+
+.about nav, h1, p{
+    margin-left: 5%;
+}
+
+.home nav, h1, p{
+    margin-left: 5%;
 }
  /* boarding tickets container */
  /* .flex-container {
