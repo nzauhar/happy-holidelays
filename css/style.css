@@ -172,7 +172,7 @@ body.home{
     margin-left: 5%;
 }
 
-.about nav, h1, h2, p{
+.about nav, h1, h2{
     margin-left: 5%;
 }
 
@@ -240,6 +240,14 @@ body.home{
 /***** About Page Styles *****/
 .about{
     background-color: #7AC6F4;
+}
+
+.about-container {
+    margin: 2%;
+    height: 40%;
+    width:70%;
+    align-content: left;
+    position: relative;
 }
 
 /* snow container and animations */
