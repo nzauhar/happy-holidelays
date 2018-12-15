@@ -172,15 +172,15 @@ body.home{
     margin-left: 5%;
 }
 
-.misfortune nav, h1, p{
-    margin-left: 5%;
-}
-
-.about nav, h1, p{
+.about nav, h1, h2, p{
     margin-left: 5%;
 }
 
 .home nav, h1, p{
+    margin-left: 5%;
+}
+
+.misfortune nav, h1, p{
     margin-left: 5%;
 }
  /* boarding tickets container */
