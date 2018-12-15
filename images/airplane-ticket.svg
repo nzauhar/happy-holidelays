@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93px" height="45px" viewBox="0 0 93 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>airplane-ticket</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="airplane-ticket" fill="#000000" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M92.7,0 L92.7,44.2 L0,44.2 L0,0 L92.7,0 Z M89.4,40.9 L89.4,3.2 L68.4,3.2 L3.2,3.2 L3.2,40.9 L66.2,40.9 L89.4,40.9 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="81.7" y="33.8" width="4.8" height="2.2"></rect>
+                <rect id="Rectangle-path" x="81.7" y="31.3" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="81.7" y="27.1" width="4.8" height="3.2"></rect>
+                <rect id="Rectangle-path" x="81.7" y="23.6" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="81.7" y="21.8" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="81.7" y="18.8" width="4.8" height="2.2"></rect>
+                <rect id="Rectangle-path" x="81.7" y="16.3" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="81.7" y="12.1" width="4.8" height="3.2"></rect>
+                <rect id="Rectangle-path" x="81.7" y="8.6" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="81.7" y="6.8" width="4.8" height="1.1"></rect>
+                <rect id="Rectangle-path" x="66.3" y="34.5" width="2.2" height="4.5"></rect>
+                <rect id="Rectangle-path" x="66.3" y="27.1" width="2.2" height="4.5"></rect>
+                <rect id="Rectangle-path" x="66.3" y="19.8" width="2.2" height="4.5"></rect>
+                <rect id="Rectangle-path" x="66.3" y="12.4" width="2.2" height="4.5"></rect>
+                <rect id="Rectangle-path" x="66.3" y="5" width="2.2" height="4.5"></rect>
+                <path d="M52.9,22.1 C52.9,22.9 50.5,23.7 49.4,23.7 L41.3,23.7 L32.5,35.4 L30.2,35.4 L34.4,23.8 L27.6,23.8 L25.3,26.7 L22.6,26.7 L24.8,22.2 L22.6,17.7 L25.3,17.7 L27.6,20.6 L34.4,20.6 L30.2,8.9 L32.5,8.9 L41.3,20.4 L49.4,20.4 C50.5,20.3 52.9,21.3 52.9,22.1 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

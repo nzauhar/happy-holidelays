@@ -1,0 +1,225 @@
+
+/* .home{
+    background: url(../images/xmas-tree.jpg) no-repeat center center fixed; */
+    /* background-position: center center fixed; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+/* 
+@media (orientation: portrait){
+    body.home{ */
+        /* height: 100vh;
+        width: 100vw; */
+        /* background: url(../images/xmas-tree-3.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    } 
+} */
+
+@media (orientation: landscape){
+    body.home{
+        height: 100vh;
+        width: 100vw;
+        background: url(../images/xmas-home-1.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    } 
+}
+
+
+/* RESPONSIVE TOP NAV */
+
+
+.topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 850px) {
+    body{
+        margin-right: 0px;
+        margin-top: 0x;
+        padding: 0px;
+    }
+    .navstyle{
+        margin-top:0;
+        position: absolute;
+        z-index: 1002;
+    }
+    .topnav a:not(:first-child) {display: none;}
+   
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin-top: 0%;
+        margin-bottom: 10px;
+        background-color:white;
+        z-index: 1002;
+    }
+}
+
+  @media screen and (max-width: 850px) {
+    .topnav.responsive {
+        position: relative;
+        background-color: #09A64D;
+        z-index: 1002;
+        padding: 10px;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: white;
+    }
+    
+    .current{
+        background:#2DD976;
+    }
+
+    .home-current{
+        background:#2DD976;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/***** RESPONSIVE FLIGHT OR NO FLIGHT PAGE *****/
+
+/* --Mobile-- Defaults & Layout for screen size widths than than 639px */
+
+/* grid container for boarding tickets on mobile */
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+.grid-container {
+    display: grid;
+    height: 90%;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+.grid-container > div {
+    text-align: center;
+    padding: 10px;
+  }  
+/* -- Larger Mobile Screens -- Layout for screen size widths between 640-859px */  
+
+@media only screen and (min-width: 640px){
+    .flight{
+        background-color: #7AC6F4;
+    }
+
+/* grid container for boarding tickets on Tablet */
+
+    .grid-container {
+        height: 100%;
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+        background-color: lightgreen;
+        padding: 10px;
+    }
+    .grid-container > div {
+        padding: 10px;
+
+    }    
+}
+
+
+/* --Tablet-- Layout for screen size widths between 860-1023px */  
+
+@media only screen and (min-width: 860px){
+    .flight{
+        background-color: #7AC6F4;
+    }
+
+/* grid container for boarding tickets on Tablet */
+
+    .grid-container {
+        height: 100%;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 5px;
+        background-color: rgb(153, 222, 248);
+        padding: 10px;
+    }
+    .grid-container > div {
+        padding: 10px;
+    }    
+}
+
+
+/* --Desktop-- Layout for screen size widths between 1024px-1399px */  
+@media only screen and (min-width: 1024px){
+    .flight{
+        background-color: #7AC6F4;
+ 
+    }
+    /* grid container for boarding tickets on desktop */
+    .flex-container {
+        /* display: flex; */
+        height: 600px;
+        /* flex-wrap: wrap; 
+        /* align-content: center; */
+      }
+    
+    .grid-container {
+        /* display: grid; */
+        height: 100%;
+        /* align-content: center; */
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 5px;
+        background-color: rgb(119, 87, 193);
+        padding: 10px;
+      }
+    .grid-container > div {
+        /* text-align: center; */
+        padding: 10px 0;
+      }    
+}
+
+/* --Large Desktop-- Layout for screen size widths greater than 1400px */  
+@media only screen and (min-width: 1400px){
+    .flight{
+        background-color: #7AC6F4;
+ 
+    }
+    /* grid container for boarding tickets on desktop */
+    .flex-container {
+        /* display: flex; */
+        height: 500px;
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+      }
+    
+    .grid-container {
+        /* display: grid; */
+        height: 80%;
+        width: 100%;
+        /* align-content: center; */
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 5px;
+        background-color: #339AF4;
+        padding: 10px;
+      }
+    .grid-container > div {
+        text-align: left;
+        padding: 20px;
+      }    
+}

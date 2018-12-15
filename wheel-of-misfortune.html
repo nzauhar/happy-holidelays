@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="misfortune">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wheel of Misfortune</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">  
+    <link rel="stylesheet" type="text/css" href="css/trial.css">
+    <link href="https://fonts.googleapis.com/css?family=Elsie:400,900%7cRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="startTime()">
+    <div class="wrapper">
+        <a class="skip-link" href="#content">Skip to content</a>  
+<header>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <div class="topnav" id="myTopnav">
+     <nav class="nav-style">
+            <i class="fas fa-tree"></i>
+            <a href="index.html" data-hover="Home">Home</a>
+            <a href="flight-or-no-flight.html" data-hover="Flight or No Flight">Flight or No Flight</a>
+            <a href="wheel-of-misfortune.html" class = "current" data-hover="Wheel of Misfortune">Wheel of Misfortune</a>                
+            <a href="about.html" data-hover="About">About</a>
+            <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>                   
+     </nav>
+     </div>
+
+    <h1>Wheel of Misfortune</h1>
+</header>
+<div id="content"></div>
+<main>
+     <p>Where jetlag is the best-case scenario. </p>
+<br>
+<div class="grid-container2">
+     <!-- <div id="wheelie"><img class="candy-wheel" src="images/candy-wheel-3.png" alt = "a wheel you can spin to find out your airline misfortune"/></div> -->
+    <!-- <div id="spinner">
+        <h2>What will your flight fortune hold?</h2>
+        <p>Cross your fingers and take a spin!</p> -->
+    <!-- <button class="btn btn-2 btn-2h">TAKE A SPIN</button> -->
+    <p>Cross your fingers and take a spin!</p>
+    <button id="button">Spin</button>
+    <img src="http://www.blimpage.com/pants/wheel_of_lunch_peg.svg" id="peg" alt= "peg to indicate which fortune is yours">
+    <img src="images/candy-wheel7.png" id="wheel1" alt = "a wheel you can spin to find out your airline misfortune"><br>
+</div>
+
+    <!-- <div id="wrapper2"></div>
+            
+            <div id="wheel">
+                <div id="inner-wheel"> -->
+                    <!-- <div id="wheeler"><img class="candy-wheeler" src="images/candy-wheel-3.png" alt = "a wheel you can spin to find out your airline misfortune"/></div> -->
+                    <!-- <div class="sec"><span class="fa fa-bell-o"></span></div>
+                    <div class="sec"><span class="fa fa-comment-o"></span></div>
+                    <div class="sec"><span class="fa fa-smile-o"></span></div>
+                    <div class="sec"><span class="fa fa-heart-o"></span></div>
+                    <div class="sec"><span class="fa fa-star-o"></span></div>
+                    <div class="sec"><span class="fa fa-lightbulb-o"></span></div>
+                </div>       
+               
+                <div id="spin">
+                    <div id="inner-spin"></div>
+                </div>
+
+                 <div id="shine"></div>
+            </div>
+
+            <div id="txt"></div>
+      </div>   
+    </div>
+    </main> -->
+</main>
+</div>
+</div>
+
+<footer>
+        <div id="txt"></div>
+    </footer>
+
+<script type="text/javascript">
+//set default degree (360*5)
+// var degree = 1800;
+//number of clicks = 0
+// var clicks = 0;
+
+// $(document).ready(function(){
+	
+	/*WHEEL SPIN FUNCTION*/
+	// $('#spin').click(function(){
+		
+		//add 1 every click
+		// clicks ++;
+		
+		/*multiply the degree by number of clicks
+	  generate random number between 1 - 360, 
+    then add to the new degree*/
+		// var newDegree = degree*clicks;
+		// var extraDegree = Math.floor(Math.random() * (360 - 1 + 1)) + 1;
+		// totalDegree = newDegree+extraDegree;
+		
+		/*let's make the spin btn to tilt every
+		time the edge of the section hits 
+		the indicator*/
+		// $('#wheel .sec').each(function(){
+		// 	var t = $(this);
+		// 	var noY = 0;
+			
+		// 	var c = 0;
+		// 	var n = 700;	
+		// 	var interval = setInterval(function () {
+		// 		c++;				
+		// 		if (c === n) { 
+		// 			clearInterval(interval);				
+		// 		}	
+					
+		// 		var aoY = t.offset().top;
+		// 		$("#txt").html(aoY);
+		// 		console.log(aoY);
+
+        //     var fortune = console.log(aoY);    
+				
+				/*23.7 is the minumum offset number that 
+				each section can get, in a 30 angle degree.
+				So, if the offset reaches 23.7, then we know
+				that it has a 30 degree angle and therefore, 
+				exactly aligned with the spin btn*/
+	// 			if(aoY < 23.89){
+	// 				console.log('<<<<<<<<');
+	// 				$('#spin').addClass('spin');
+	// 				setTimeout(function () { 
+	// 					$('#spin').removeClass('spin');
+	// 				}, 100);	
+	// 			}
+	// 		}, 10);
+			
+	// 		$('#inner-wheel').css({
+	// 			'transform' : 'rotate(' + totalDegree + 'deg)'			
+	// 		});
+		 
+	// 		noY = t.offset().top;
+			
+	// 	});
+	// });
+	
+	
+	
+//DOCUMENT READY
+
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+	
+	
+// Cache our elements.
+var wheel = document.querySelector("#wheel1"),
+    button = document.querySelector("#button"),
+    
+    // Initialise a random number variable. As zero.
+    rando = 0;
+
+// When we click the button...
+var spin_wheel = function () {
+  
+  // Generate a random number that'll determine how many degrees the wheel spins.
+  // We want it to spin 8 times (2880 degrees) and then land somewhere, so we'll add between 0 and 360 degrees to that.
+  // We add this to the already-created "rando" variable so that we can spin the wheel multiple times.
+  rando += (Math.random() * 360) + 2880;
+  
+  // And spin the wheel to the random position we just generated!
+  // Gotta cover ourselves with vendor prefixes.
+  wheel.style.webkitTransform = "rotate(" + rando + "deg)";
+  wheel.style.mozTransform = "rotate(" + rando + "deg)";
+  wheel.style.msTransform = "rotate(" + rando + "deg)";
+  wheel.style.transform = "rotate(" + rando + "deg)";
+  
+}
+
+button.addEventListener("click", spin_wheel, false);
+</script>
+
+<script src="js/index.js"></script>
+</body>
+</html>
