@@ -23,18 +23,30 @@
     } 
 } */
 
-@media (orientation: landscape){
+
+
+/* @media only screen and (min-width : 320px) and (max-width : 480px){
     body.home{
-        height: 100vh;
-        width: 100vw;
-        background: url(../images/xmas-home-1.jpg) no-repeat center center fixed;
+        /* background: url(../images/xmas-xphone.png) no-repeat center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        height: 100%;
+        width: 100%; */
+        /* background-image: url(../images/xmas-phone-2.png); 
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;       
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:100%;
+        width:100%; 
+        background-color: #7AC6F4;
     } 
-}
-
+} */ 
 
 /* RESPONSIVE TOP NAV */
 
